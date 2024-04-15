@@ -15,6 +15,6 @@ fun main(args: Array<String>) {
 @RestController
 class HelloController {
 
-    @GetMapping("/hello")
+    @GetMapping("/hello-kotlin")
     fun getHello() = "Hello World!"
 }
