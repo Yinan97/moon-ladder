@@ -75,7 +75,7 @@
                 <version>3.4.1</version>
                 <configuration>
                     <to>
-                        <image>moon-ladder</image>
+                        <image>yinan9751/moon-ladder</image>
                     </to>
                     <container>
                         <ports>
