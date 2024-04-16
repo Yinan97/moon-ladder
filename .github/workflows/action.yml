@@ -15,8 +15,8 @@ jobs:
           distribution: 'corretto'
           java-version: '17'
 
-      - name: mvn test
-        run: ./mvnw test
+      - name: mvn package
+        run: ./mvnw package
 
       - name: build image
         uses: docker/build-push-action@v2
