@@ -14,9 +14,8 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers.*
 @SpringBootTest
 @AutoConfigureMockMvc
 class HelloControllerTest{
+    @Autowired
     lateinit var mockMvc: MockMvc
-
-    lateinit var objectMapper: ObjectMapper
 
     @Test
     fun testHelloWorld() {
