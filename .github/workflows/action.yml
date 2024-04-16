@@ -36,5 +36,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: yinan9751/moon-ladder:{{ GIT_COMMIT }}
+          tags: yinan9751/moon-ladder:${{ github.sha }}
 
