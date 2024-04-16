@@ -31,3 +31,6 @@ jobs:
           push: true
           tags: yinan9751/moon-ladder:${{ github.sha }}
 
+      - name: Print image version
+        run: echo ${{ github.sha }}
+
