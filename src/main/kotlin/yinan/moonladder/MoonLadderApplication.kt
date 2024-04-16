@@ -17,4 +17,7 @@ class HelloController {
 
     @GetMapping("/hello-kotlin")
     fun getHello() = "Hello World!"
+
+    @GetMapping("/echo")
+    fun getEcho() = "echo"
 }
