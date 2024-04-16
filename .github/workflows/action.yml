@@ -15,10 +15,10 @@ jobs:
           distribution: 'corretto'
           java-version: '17'
 
-      - name: mvn package
+      - name: Maven package
         run: ./mvnw package
 
-      - name: build image
+      - name: Build image
         uses: docker/build-push-action@v2
         with:
           context: .
