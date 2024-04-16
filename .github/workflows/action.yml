@@ -35,11 +35,11 @@ jobs:
         run: echo ${{ github.sha }}
 
       - name: Checkout target repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           repository: yinan97/environment
-          path: moon-ladder
           token: ${{ secrets.ACCESS_TOKEN }}
+          path: moon-ladder
 
       - name: Modify file in target repository
         run: |
