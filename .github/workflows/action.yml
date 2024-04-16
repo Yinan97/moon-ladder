@@ -18,3 +18,10 @@ jobs:
       - name: mvn clean package
         run: ./mvnw clean package
 
+      - name: build image
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          push: false
+          tags: yinan9751/moon-ladder:latest
+
