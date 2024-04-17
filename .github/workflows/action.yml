@@ -33,21 +33,3 @@ jobs:
 
       - name: Print image version
         run: echo ${{ github.sha }}
-
-      - name: Checkout target repository
-        uses: actions/checkout@v4
-        with:
-          repository: yinan97/environment
-          path: moon-ladder
-
-      - name: Modify file in target repository
-        run: |
-          cd moon-ladder
-          echo "Modified content" > file.txt
-          git config user.email "actions@github.com"
-          git config user.name "GitHub Actions"
-          git add file.txt
-          git commit -m "Modify file using GitHub Actions"
-          git push
-
-
