@@ -38,7 +38,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: yinan97/environment
-          token: ${{ secrets.ACCESS_TOKEN }}
           path: moon-ladder
 
       - name: Modify file in target repository
